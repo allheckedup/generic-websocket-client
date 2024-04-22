@@ -1,0 +1,304 @@
+/* set the layout to border box model */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.login-form form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    min-width: 750px;
+    align-items: center;
+    gap: 4%
+}
+
+#user-credentials-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    gap: 5%;
+    align-items: center;
+}
+
+#login-button {
+    min-width: 500px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    gap: 5%;
+    margin: 0;
+    padding: 0;
+    max-height: 120px;
+}
+
+#login-button button {
+    max-height: 50px;
+    min-height: 40px;
+    font-size: medium;
+    align-self: center;
+}
+
+#login-status {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    gap: 1%;
+    flex-basis: 80%;
+    margin: 0;
+    padding: 0;
+}
+
+h3#login-success {
+    white-space: nowrap;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+}
+
+.input-container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5%;
+    justify-content: space-between;
+}
+
+#host-container {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5%;
+}
+
+.input-container {
+    flex-flow: row nowrap;
+}
+
+.container {
+    background-color: blanchedalmond;
+    border: solid gray;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h3, h4, h5 {
+    white-space: nowrap;
+    display: inline;
+    margin: 2px
+}
+
+.responder-container {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 500px;
+    justify-content: space-evenly;
+}
+
+.response-table {
+    flex-basis: 64%;
+    width: 64%;
+}
+
+.response-table table {
+    display: flex;
+    border: 1px solid purple;
+    table-layout: fixed;
+    overflow-y: scroll;
+    border-collapse: collapse;
+    height: 100%;
+}
+
+.response-table tbody {
+    width: 100%;
+}
+
+.response-table tr {
+    min-height: 25px;
+    display: flex;
+    width: 100%;
+    border: 1px solid lightgrey;
+    align-items: center;
+}
+
+.response-table td {
+    padding: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+td.send {
+    flex-basis: 2%;
+    font-size: large;
+}
+
+td.data {
+    flex-basis: 88%;
+}
+
+td.time {
+    flex-basis: 10%;
+    font-size: small;
+}
+
+.response-table pre {
+    overflow-y: scroll;
+    overflow-x: clip;
+    overflow-wrap: anywhere;
+    height: 500px;
+    white-space: pre-wrap;
+    width: 100%;
+    min-width: 300px;
+}
+
+.message-inspect {
+    border: 1px solid red;
+    font-size: x-large;
+    flex-basis: 35%;
+    overflow: scroll;
+    width: 100%;
+}
+
+.row-unselected-send {
+    background-color: #DBFFCE;
+}
+
+.row-unselected-rcv {
+    background-color: ghostwhite;
+}
+
+.row-selected {
+    background-color: lightblue !important;
+    border: 1px solid lightblue !important;
+}
+
+.collapsible-container {
+    width: 100%;
+    flex-basis: 100%;
+}
+
+.collapsing-header button {
+    border: 0;
+    border-top: 2px solid ghostwhite;
+    border-bottom: 2px solid ghostwhite;
+    background-color: white;
+    width: 100%;
+    text-align: left;
+}
+
+.size-large button {
+    font-size: x-large;
+    height: 50px;
+}
+
+.size-medium button {
+    font-size: large;
+    height: 40px;
+}
+
+.size-small button {
+    font-size: medium;
+    height: 35px;
+}
+
+.size-tiny button {
+    font-size: small;
+    height: 30px;
+}
+
+.collapsed button{
+    border: 0;
+    background-color: ghostwhite;
+}
+
+.rcv-icon {
+    color: darkred;
+}
+
+.send-icon {
+    color: green;
+}
+
+.message-filter {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 1%;
+    align-content: center;
+    align-items: center;
+}
+
+.message-filter-actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10%;
+    flex-basis: 3%;
+}
+
+.message-filter-toggle {
+    height: 20px;
+    width: 20px;
+}
+
+.message-filter-edit {
+    flex-basis: 1%;
+    border: 0;
+    background-color: white;
+    font-size: large;
+}
+
+.message-filter-details {
+    flex-basis: 94%;
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1%;
+}
+
+.filter-field {
+    font-size: large;
+    font-style: italic;
+    color: darkslategrey;
+    background-color: ghostwhite;
+    height: 100%;
+    flex-basis: 7%;
+    text-align: center;
+}
+
+.message-filter-details select {
+    font-size: medium;
+    font-style: italic;
+    width: 120px;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    flex-basis: 5%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.message-filter-details select:disabled {
+    opacity: 0.8;
+}
+
+.message-filter-details h4 {
+    font-size: large;
+    font-style: normal;
+    font-weight: normal;
+}
