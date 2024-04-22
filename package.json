@@ -1,6 +1,6 @@
 {
   "name": "websockets-i-guess",
-  "version": "8.0.0",
+  "version": "1.0.0",
   "description": "idk some sort of websocket client i guess",
   "main": "index.js",
   "scripts": {
