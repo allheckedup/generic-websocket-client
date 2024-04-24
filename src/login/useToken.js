@@ -1,7 +1,5 @@
-import { useContext, useEffect } from "react";
-import AuthHeaderContext from "./AuthHeaderContext";
+import { useEffect } from "react";
 import fetchToken from "./fetchToken";
-import { useQuery } from "@tanstack/react-query";
 
 const createHdr = (bearerToken) => {
   return {

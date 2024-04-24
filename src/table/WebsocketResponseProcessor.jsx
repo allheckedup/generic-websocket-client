@@ -49,7 +49,7 @@ const WebsocketResponseProcessor = ({ defaultFilterHeartbeats }) => {
 
   useLoginHeader(authHeader, sendAndLog, setAuthHeader);
   useHeartbeat(lastMessage, sendAndLog, setLoginState);
-  useMessageHistory(lastMessage, messageHistory);
+  useMessageHistory(lastMessage, setMessageHistory);
 
   const filteredMessages = useFilters(
     allFilters,
